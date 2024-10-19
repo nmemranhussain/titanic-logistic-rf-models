@@ -134,7 +134,7 @@ Below is the ROC curve plot for the model's performance:
 
 **ROC Curve for Training, Validation, and Test Data:**
 
-![ROC Curve](./roc_curve_plot.png)
+![ROC Curve](output.png)
 
 The AUC for each dataset is visualized in the plot above.
 
