@@ -73,13 +73,71 @@ The dataset was divided into training and validation data as follows:
 The Titanic test dataset used in this model is sourced from [Kaggle](https://www.kaggle.com/c/titanic/data?select=test.csv).
 [Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
 
-
 ### Number of Rows in Test Data
 - **Number of rows in Test Data:** 418
 
 ### Differences Between Training and Test Data
 - The test dataset does not include the `Survived` column, which is the target variable in the training dataset.
 - All other feature columns are the same between the training and test datasets.
+
+## Model Details
+
+### Columns Used as Inputs in the Final Model
+The following columns were used as inputs (features) in the final model:
+- Pclass
+- Sex
+- Age
+- SibSp
+- Parch
+- Fare
+- Embarked
+
+### Column(s) Used as Target(s) in the Final Model
+- **Target Column:** Survived
+
+### Type of Model
+The model used is a **Logistic Regression** classifier.
+
+### Software Used to Implement the Model
+- **Software:** Python (with libraries such as Scikit-learn)
+- **Version of the Modeling Software:** scikit-learn 1.x
+
+### Hyperparameters or Other Settings of the Model
+The following hyperparameters were used for the Logistic Regression model:
+- **Solver:** lbfgs
+- **Maximum Iterations:** 100
+- **Regularization (C):** 1.0
+- Features used in the model: ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex_male', 'Embarked_Q', 'Embarked_S']
+- Target column: Survived
+- Model type: Logistic Regression
+- Hyperparameters: Solver = lbfgs, Max iterations = 500, C = 1.0
+- Software used: scikit-learn sklearn.linear_model._logistic
+
+## Quantitative Analysis
+
+### Metrics Used to Evaluate the Final Model
+The following metrics were used to evaluate the final model:
+- **AUC (Area Under the ROC Curve)**: Measures the model's ability to distinguish between positive and negative classes.
+- **AIR (Adverse Impact Ratio)**: A fairness metric that compares outcomes between groups, such as male vs. female survival rates.
+
+### Final Values of Metrics for All Data:
+
+| Dataset     | AUC   | AIR  |
+|-------------|-------|------|
+| Training    | 0.85  | 0.25 |
+| Validation  | 0.88  | 0.27 |
+
+
+### Plots Related to Data or Final Model
+Below is the ROC curve plot for the model's performance:
+
+**ROC Curve for Training, Validation, and Test Data:**
+
+![ROC Curve](./roc_curve_plot.png)
+
+The AUC for each dataset is visualized in the plot above.
+
+
 
 
 
