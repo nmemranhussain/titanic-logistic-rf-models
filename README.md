@@ -132,7 +132,7 @@ The following metrics were used to evaluate the final model:
 ### Plots Related to Data or Final Model
 Below is the ROC curve plot for the model's performance:
 
-**ROC Curve for Training, Validation, and Test Data:**
+**ROC Curve for Training and Validation Data as Test Data dosn't contain any 'Survival' Column:**
 
 ![ROC Curve](output.png)
 
