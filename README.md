@@ -124,8 +124,9 @@ The following metrics were used to evaluate the final model:
 
 | Dataset     | AUC   | AIR  |
 |-------------|-------|------|
-| Training    | 0.85  | 0.25 |
-| Validation  | 0.88  | 0.27 |
+| Training    | 0.85  | 0.83 |
+| Validation  | 0.81  | 0.77 |
+| Test        | 0.85  | 0.83 |
 
 
 ### Plots Related to Data or Final Model
