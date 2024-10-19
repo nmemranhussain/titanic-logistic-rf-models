@@ -140,7 +140,7 @@ Below is the ROC curve plot for the model's performance:
 ![Plot of Survival Rate Vs. Passenger Gender](SR_by_Gender.png) 
 ![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
 
-## Potential Impacts, Risks, and Uncertainties
+## Potential Impacts, Risks, and Uncertainties using Logistic Regression Model
 
 Potential Negative Impacts: 
 The model may perform well on training data but poorly on new data. Features like Sex and Pclass may disproportionately influence predictions, leading to biased results. Missing or incomplete data could reduce model reliability.
