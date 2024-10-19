@@ -142,21 +142,33 @@ Below is the ROC curve plot for the model's performance:
 
 ## Potential Impacts, Risks, and Uncertainties
 
-[Potential Negative Impacts
+Potential Negative Impacts: 
 Overfitting: The model may perform well on training data but poorly on new data.
+
 Feature Bias: Features like Sex and Pclass may disproportionately influence predictions, leading to biased results.
+
 Data Quality: Missing or incomplete data could reduce model reliability.
-Real-world Risks
+
+Real-world Risks:
 Bias and Fairness: The model could reinforce gender or class biases, affecting other applications like healthcare.
+
 Misinterpretation: Non-experts might mistake probabilistic predictions as deterministic.
+
 Ethical Concerns: Using biased models in critical decision-making could raise ethical issues.
-Potential Uncertainties
+
+Potential Uncertainties: 
+
 Feature Importance: The model might misjudge which features are most important due to correlations.
+
 Algorithm Limitations: Logistic regression may oversimplify, and Random Forest may reduce interpretability.
+
 Outdated Data: The Titanic dataset may not generalize to modern contexts.
-Unexpected Results
+
+Unexpected Results: 
+
 Gender Bias: Heavy reliance on Sex as a predictor might not translate to other datasets.
-Class Disparity: Strong predictions favoring 1st-class passengers may not apply outside this context.]
+
+Class Disparity: Strong predictions favoring 1st-class passengers may not apply outside this context.
 
 
 
