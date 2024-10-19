@@ -134,9 +134,9 @@ Below is the ROC curve plot for the model's performance:
 
 **ROC Curve for Training and Validation Data as Test Data dosn't contain any 'Survival' Column:**
 
-![ROC Curve](output.png)
+![ROC Curve](output.png) 
 
-The AUC for each dataset is visualized in the plot above.
+Plot of Survival Rate Vs. Passenger Class 
 
 
 
