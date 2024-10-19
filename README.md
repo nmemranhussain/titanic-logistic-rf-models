@@ -38,6 +38,8 @@ This model was built using packages that promote responsible AI practices, such 
 **Number of Samples:** 891  
 **Features Used:** Passenger class, gender, age, fare, etc.  
 **Data Source:** (https://www.kaggle.com/c/titanic/data?select=train.csv)
+[Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
+
 
 ### Splitting the Data
 The dataset was divided into training and validation data as follows:
@@ -64,6 +66,23 @@ The dataset was divided into training and validation data as follows:
 | Fare            | Feature        | Continuous        | Fare paid by the passenger             |
 | Cabin           | Feature        | Nominal           | Cabin number                           |
 | Embarked        | Feature        | Nominal           | Port of embarkation (C = Cherbourg, Q = Queenstown, S = Southampton) |
+
+## Test Data
+
+### Source of Test Data
+The Titanic test dataset used in this model is sourced from [Kaggle](https://www.kaggle.com/c/titanic/data?select=test.csv).
+[Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
+
+
+### Number of Rows in Test Data
+- **Number of rows in Test Data:** 418
+
+### Differences Between Training and Test Data
+- The test dataset does not include the `Survived` column, which is the target variable in the training dataset.
+- All other feature columns are the same between the training and test datasets.
+
+
+
 
 
 
