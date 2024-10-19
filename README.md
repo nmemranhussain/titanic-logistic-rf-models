@@ -136,7 +136,10 @@ Below is the ROC curve plot for the model's performance:
 
 ![ROC Curve](output.png) 
 
-Plot of Survival Rate Vs. Passenger Class 
+![Plot of Survival Rate Vs. Passenger Class](SR_by_Class.png) 
+![Plot of Survival Rate Vs. Passenger Gender](SR_by_Gender.png) 
+![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
+
 
 
 
