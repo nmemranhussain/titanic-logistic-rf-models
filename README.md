@@ -167,6 +167,14 @@ The identical AUC (0.860131) and AIR (0.810724) values for both the training and
 
 The Random Forest model achieved an AUC (Area Under the Curve) of 0.500 on the test dataset, indicating that the model's performance is equivalent to random guessing. An AUC of 0.5 typically means the model cannot distinguish between the two classes (Survived vs. Not Survived). The Average Information Retrieval (AIR) score is 0.3636, which also indicates relatively low effectiveness in retrieving positive instances (i.e., those who survived)
 
+## Conclusionl ##
+
+Both logistic regression and random forest models were employed to predict passenger survival on the Titanic dataset. Logistic regression exhibited consistent performance across training, validation, and test sets, suggesting good generalization. The model's AUC and AIR scores consistently hovered around 0.88, indicating reliable prediction capabilities.
+
+In contrast, random forest demonstrated signs of overfitting. While it achieved high scores on the training set, its performance dropped significantly on the test set, indicating an inability to generalize well to unseen data. This might be attributed to the model's complexity or the presence of noise in the training data.
+
+In conclusion, based on the findings, logistic regression appears to be a more suitable choice for this particular problem due to its better generalization and consistent performance. However, further analysis and experimentation might be necessary to fully understand the reasons for random forest's overfitting and explore potential mitigation strategies.
+
 ## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model ##
 
 Logistic Regression assumes linear relationships, potentially missing complex patterns. It can overemphasize certain features, leading to biased predictions. It may reinforce social biases, especially with sensitive features like gender or class. Probabilistic results may be misunderstood as deterministic. In logistic regression, model performance is highly dependent on the right feature choices. The results may not generalize well to modern contexts or datasets. Logistic regression may produce unexpected reliance on certain features (e.g., gender), limiting its applicability to other datasets.
