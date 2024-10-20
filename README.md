@@ -37,9 +37,7 @@ This model was built using packages that promote responsible AI practices, such 
 **Dataset Name:** Titanic Training Data  
 **Number of Samples:** 891  
 **Features Used:** Passenger class, gender, age, fare, etc.  
-**Data Source:** (https://www.kaggle.com/c/titanic/data?select=train.csv)
-[Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
-
+**Data Source:** [kaggle](https://www.kaggle.com/c/titanic/data?select=train.csv)
 
 ### Splitting the Data
 The dataset was divided into training and validation data as follows:
@@ -96,10 +94,10 @@ The following columns were used as inputs (features) in the final model:
 
 ### Type of Models
 The first model used is a **Logistic Regression** classifier. [Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
-The second model used is a **Random Forest** classifier
+The second model used is a **Random Forest** classifier [Link to Jupyter Notebook](http://localhost:8890/notebooks/Titanic_RF.ipynb)
 
 ### Software Used to Implement the Model
-- **Software:** Python (with libraries such as Scikit-learn)
+- **Software:** Python (with libraries such as Pandas, Scikit-learn)
 - **Version of the Modeling Software:** scikit-learn 1.x
 
 ### Hyperparameters or Other Settings of the Model
@@ -135,12 +133,21 @@ Below is the ROC curve plot for the model's performance:
 **ROC Curve for Training and Validation Data as Test Data dosn't contain any 'Survival' Column:**
 
 ![ROC Curve](output.png) 
-
 ![Plot of Survival Rate Vs. Passenger Class](SR_by_Class.png) 
 ![Plot of Survival Rate Vs. Passenger Gender](SR_by_Gender.png) 
 ![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
 
-## Potential Impacts, Risks, and Uncertainties using Logistic Regression Model
+## Insights using Logistic Regression Model**
+The model's AUC of 0.8521 and AIR of 0.8277 on training data indicate strong performance, showing that it effectively distinguishes between passengers who survived and those who did not, with high precision across thresholds. However, these scores are based on training data, so there’s a potential risk of overfitting. To ensure the model generalizes well, it's crucial to evaluate on validation or test data and make adjustments if performance drops significantly
+
+The model's AUC of 0.8110 and AIR of 0.7728 on validation data suggest that it performs well in distinguishing between survivors and non-survivors on unseen data, though slightly lower than the training data. This indicates that the model generalizes reasonably well. The slight drop from training to validation metrics suggests that the model is not significantly overfitting.
+
+The model’s AUC of 0.8521 and AIR of 0.8277 on the test data show strong performance and good generalization. The model effectively distinguishes between survivors and non-survivors, maintaining high precision and balance between false positives and false negatives. These results align well with the training and validation metrics, indicating minimal overfitting and reliable predictions on unseen data.
+
+## Insights using Random Forest Model**
+
+
+## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model**
 
 Potential Negative Impacts: 
 The model may perform well on training data but poorly on new data. Features like Sex and Pclass may disproportionately influence predictions, leading to biased results. Missing or incomplete data could reduce model reliability.
