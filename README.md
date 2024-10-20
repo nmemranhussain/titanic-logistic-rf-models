@@ -71,7 +71,6 @@ The dataset was divided into training and validation data as follows:
 
 ### Source of Test Data
 The Titanic test dataset used in this model is sourced from [Kaggle](https://www.kaggle.com/c/titanic/data?select=test.csv).
-[Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
 
 ### Number of Rows in Test Data
 - **Number of rows in Test Data:** 418
@@ -95,8 +94,9 @@ The following columns were used as inputs (features) in the final model:
 ### Column(s) Used as Target(s) in the Final Model
 - **Target Column:** Survived
 
-### Type of Model
-The model used is a **Logistic Regression** classifier.
+### Type of Models
+The first model used is a **Logistic Regression** classifier. [Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
+The second model used is a **Random Forest** classifier
 
 ### Software Used to Implement the Model
 - **Software:** Python (with libraries such as Scikit-learn)
