@@ -163,7 +163,7 @@ The AUC score of 0.98 on test data (here, gender_submission.csv) indicates that 
 ## Insights using Random Forest Model ##
 An AUC score of 0.86 is quite high, indicating that the Random Forest model can effectively discriminate between the positive class (survived) and the negative class (did not survive). An AIR of 0.81 suggests that the model retrieves relevant information efficiently. It means that when the model predicts survivors (positive class), it is correct about 81% of the time. 
 
-The identical AUC (0.860131) and AIR (0.810724) values for both the training and validation datasets suggest that the model is likely overfitting or through we splitted the dataset into 70% and 30% for training-validation dataset. The Random Forest model may be too complex or have too many trees, which could cause it to capture noise and nuances in the training data, resulting in near-identical performance.
+The identical AUC (0.860131) and AIR (0.810724) values for both the training and validation datasets suggest that the model is likely overfitting through we splitted the dataset into 70% and 30% for training-validation dataset. The Random Forest model may be too complex or have too many trees, which could cause it to capture noise and nuances in the training data, resulting in near-identical performance.
 
 The Random Forest model achieved an AUC (Area Under the Curve) of 0.500 on the test dataset, indicating that the model's performance is equivalent to random guessing. An AUC of 0.5 typically means the model cannot distinguish between the two classes (Survived vs. Not Survived). The Average Information Retrieval (AIR) score is 0.3636, which also indicates relatively low effectiveness in retrieving positive instances (i.e., those who survived)
 
