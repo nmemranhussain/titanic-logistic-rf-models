@@ -23,8 +23,8 @@ Random Forest : http://localhost:8889/notebooks/Titanic_RF.ipynb?
 
 ## Model Details
 **Architecture:** This model utilizes linear models such as Logistic Regression, Random Forest, etc., for classification tasks.  
-**Training Data:** Titanic dataset provided by Kaggle (Link to dataset if possible).  
-**Evaluation Metrics:** Accuracy, F1 Score, Precision, Recall.
+**Training Data:** Titanic dataset provided by Kaggle (https://www.kaggle.com/c/titanic/data).  
+**Evaluation Metrics:** Area Under the Curve (AUC) and Average Information Retrieval (AIR).
 
 ## Responsible AI
 This model was built using packages that promote responsible AI practices, such as:
@@ -39,10 +39,15 @@ This model was built using packages that promote responsible AI practices, such 
 **Features Used:** Passenger class, gender, age, fare, etc.  
 **Data Source:** [kaggle](https://www.kaggle.com/c/titanic/data?select=train.csv)
 
-### Splitting the Data
+### Splitting the Data for logistic regression model
 The dataset was divided into training and validation data as follows:
 - **Training Data Split:** 80%
 - **Validation Data Split:** 20%
+
+### Splitting the Data for random forest model
+The dataset was divided into training and validation data as follows:
+- **Training Data Split:** 70%
+- **Validation Data Split:** 30%
 
 ### Number of Rows
 - **Number of rows in Training Data:** 712
@@ -68,7 +73,7 @@ The dataset was divided into training and validation data as follows:
 ## Test Data
 
 ### Source of Test Data
-The Titanic test dataset used in this model is sourced from [Kaggle](https://www.kaggle.com/c/titanic/data?select=test.csv).
+The Titanic test dataset used in this model is sourced from [Kaggle](https://www.kaggle.com/c/titanic/data?select=gender_submission.csv).
 
 ### Number of Rows in Test Data
 - **Number of rows in Test Data:** 418
@@ -101,7 +106,7 @@ The second model used is a **Random Forest** classifier [Link to Jupyter Noteboo
 - **Version of the Modeling Software:** scikit-learn 1.x
 
 ### Hyperparameters or Other Settings of the Model
-The following hyperparameters were used for the Logistic Regression model:
+The following hyperparameters were used for the 'logistic regression' model:
 - **Solver:** lbfgs
 - **Maximum Iterations:** 100
 - **Regularization (C):** 1.0
@@ -111,7 +116,7 @@ The following hyperparameters were used for the Logistic Regression model:
 - Hyperparameters: Solver = lbfgs, Max iterations = 500, C = 1.0
 - Software used: scikit-learn sklearn.linear_model._logistic
 
-The following hyperparameters were used for the Random Forest model:
+The following hyperparameters were used for the 'random forest' model:
 - Columns used as inputs': ['Pclass', 'Sex', 'Age', 'Fare'], 
 - Target column: 'Survived',
 - Type of model: 'Random Forest Classifier',
