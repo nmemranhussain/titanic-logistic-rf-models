@@ -167,7 +167,7 @@ The identical AUC (0.860131) and AIR (0.810724) values for both the training and
 
 The Random Forest model achieved an AUC (Area Under the Curve) of 0.500 on the test dataset, indicating that the model's performance is equivalent to random guessing. An AUC of 0.5 typically means the model cannot distinguish between the two classes (Survived vs. Not Survived). The Average Information Retrieval (AIR) score is 0.3636, which also indicates relatively low effectiveness in retrieving positive instances (i.e., those who survived)
 
-## Conclusionl ##
+## Conclusion ##
 
 Both logistic regression and random forest models were employed to predict passenger survival on the Titanic dataset. Logistic regression exhibited consistent performance across training, validation, and test sets, suggesting good generalization. The model's AUC and AIR scores consistently hovered around 0.88, indicating reliable prediction capabilities.
 
