@@ -149,17 +149,9 @@ The model’s AUC of 0.8521 and AIR of 0.8277 on the test data show strong perfo
 
 ## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model ##
 
-Potential Negative Impacts: 
-The model may perform well on training data but poorly on new data. Features like Sex and Pclass may disproportionately influence predictions, leading to biased results. Missing or incomplete data could reduce model reliability.
+Logistic Regression assumes linear relationships, potentially missing complex patterns. It can overemphasize certain features, leading to biased predictions. It may reinforce social biases, especially with sensitive features like gender or class. Probabilistic results may be misunderstood as deterministic. In logistic regression, model performance is highly dependent on the right feature choices. The results may not generalize well to modern contexts or datasets. Logistic regression may produce unexpected reliance on certain features (e.g., gender), limiting its applicability to other datasets.
 
-Real-world Risks:
-The model could reinforce gender or class biases, affecting other applications like healthcare. Non-experts might mistake probabilistic predictions as deterministic. Using biased models in critical decision-making could raise ethical issues.
-
-Potential Uncertainties: 
-The model might misjudge which features are most important due to correlations. Logistic regression may oversimplify, and Random Forest may reduce interpretability. The Titanic dataset may not generalize to modern contexts.
-
-Unexpected Results: 
-Heavy reliance on Sex as a predictor might not translate to other datasets. Strong predictions favoring 1st-class passengers may not apply outside this context.
+On the other hand, in 'Random Forest' it is harder to interpret compared to logistic regression, making explainability a challenge. Despite being more robust, it may still overfit without careful tuning. If trained on biased data, it can perpetuate unfairness in predictions. It requires more computational power and can slow down real-time predictions. It can obscure which features are truly influential due to the complexity of multiple trees. Random Forest model's performance may vary based on data and hyperparameter tuning. It may capture unexpected patterns and interactions between features, which can lead to either surprisingly good or poor results depending on the dataset.
 
 
 
