@@ -137,17 +137,17 @@ Below is the ROC curve plot for the model's performance:
 ![Plot of Survival Rate Vs. Passenger Gender](SR_by_Gender.png) 
 ![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
 
-## Insights using Logistic Regression Model**
+## Insights using Logistic Regression Model ##
 The model's AUC of 0.8521 and AIR of 0.8277 on training data indicate strong performance, showing that it effectively distinguishes between passengers who survived and those who did not, with high precision across thresholds. However, these scores are based on training data, so there’s a potential risk of overfitting. To ensure the model generalizes well, it's crucial to evaluate on validation or test data and make adjustments if performance drops significantly
 
 The model's AUC of 0.8110 and AIR of 0.7728 on validation data suggest that it performs well in distinguishing between survivors and non-survivors on unseen data, though slightly lower than the training data. This indicates that the model generalizes reasonably well. The slight drop from training to validation metrics suggests that the model is not significantly overfitting.
 
 The model’s AUC of 0.8521 and AIR of 0.8277 on the test data show strong performance and good generalization. The model effectively distinguishes between survivors and non-survivors, maintaining high precision and balance between false positives and false negatives. These results align well with the training and validation metrics, indicating minimal overfitting and reliable predictions on unseen data.
 
-## Insights using Random Forest Model**
+## Insights using Random Forest Model ##
 
 
-## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model**
+## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model ##
 
 Potential Negative Impacts: 
 The model may perform well on training data but poorly on new data. Features like Sex and Pclass may disproportionately influence predictions, leading to biased results. Missing or incomplete data could reduce model reliability.
