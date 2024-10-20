@@ -111,6 +111,13 @@ The following hyperparameters were used for the Logistic Regression model:
 - Hyperparameters: Solver = lbfgs, Max iterations = 500, C = 1.0
 - Software used: scikit-learn sklearn.linear_model._logistic
 
+The following hyperparameters were used for the Random Forest model:
+- Columns used as inputs': ['Pclass', 'Sex', 'Age', 'Fare'], 
+- Target column: 'Survived',
+- Type of model: 'Random Forest Classifier',
+- Software used: 'scikit-learn',
+- Software version: '0.24.1'
+
 ## Quantitative Analysis
 
 ### Metrics Used to Evaluate the Final Model
@@ -118,34 +125,42 @@ The following metrics were used to evaluate the final model:
 - **AUC (Area Under the ROC Curve)**: Measures the model's ability to distinguish between positive and negative classes.
 - **AIR (Adverse Impact Ratio)**: A fairness metric that compares outcomes between groups, such as male vs. female survival rates.
 
-### Final Values of Metrics for All Data:
+### Final Values of Metrics for All Data using 'logistic regression' model:
 
 | Dataset     | AUC   | AIR  |
 |-------------|-------|------|
-| Training    | 0.85  | 0.83 |
-| Validation  | 0.81  | 0.77 |
-| Test        | 0.85  | 0.83 |
+| Training    | 0.88  | 0.88 |
+| Validation  | 0.86  | 0.83 |
+| Test        | 0.98  | 0.98 |
+
+### Final Values of Metrics for All Data using 'random forest' model:
+
+| Dataset     | AUC   | AIR  |
+|-------------|-------|------|
+| Training    | 0.86  | 0.81 |
+| Validation  | 0.86  | 0.81 |
+| Test        | 0.50  | 0.36 |
 
 
 ### Plots Related to Data or Final Model
-Below is the ROC curve plot for the model's performance:
-
-**ROC Curve for Training and Validation Data as Test Data dosn't contain any 'Survival' Column:**
-
-![ROC Curve](output.png) 
+ 
 ![Plot of Survival Rate Vs. Passenger Class](SR_by_Class.png) 
 ![Plot of Survival Rate Vs. Passenger Gender](SR_by_Gender.png) 
 ![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
 
 ## Insights using Logistic Regression Model ##
-The model's AUC of 0.8521 and AIR of 0.8277 on training data indicate strong performance, showing that it effectively distinguishes between passengers who survived and those who did not, with high precision across thresholds. However, these scores are based on training data, so there’s a potential risk of overfitting. To ensure the model generalizes well, it's crucial to evaluate on validation or test data and make adjustments if performance drops significantly
+The model's AUC of 0.88 and AIR of 0.88 on training data indicate strong performance, showing that it effectively distinguishes between passengers who survived and those who did not, with high precision across thresholds. However, these scores are based on training data, so there’s a potential risk of overfitting. To ensure the model generalizes well, it's crucial to evaluate on validation or test data and make adjustments if performance drops significantly.
 
-The model's AUC of 0.8110 and AIR of 0.7728 on validation data suggest that it performs well in distinguishing between survivors and non-survivors on unseen data, though slightly lower than the training data. This indicates that the model generalizes reasonably well. The slight drop from training to validation metrics suggests that the model is not significantly overfitting.
+The model's AUC of 0.86 and AIR of 0.83 on validation data suggest that it performs well in distinguishing between survivors and non-survivors on unseen data, though slightly lower than the training data. This indicates that the model generalizes reasonably well. The slight drop from training to validation metrics suggests that the model is not significantly overfitting.
 
-The model’s AUC of 0.8521 and AIR of 0.8277 on the test data show strong performance and good generalization. The model effectively distinguishes between survivors and non-survivors, maintaining high precision and balance between false positives and false negatives. These results align well with the training and validation metrics, indicating minimal overfitting and reliable predictions on unseen data.
+The AUC score of 0.98 on test data (here, gender_submission.csv) indicates that the model is highly capable of distinguishing between the classes (survived vs. not survived). The AIR score of 0.98 further demonstrates that the model is not only accurate in terms of ranking predictions but also does well in identifying relevant instances. 
 
 ## Insights using Random Forest Model ##
+An AUC score of 0.86 is quite high, indicating that the Random Forest model can effectively discriminate between the positive class (survived) and the negative class (did not survive). An AIR of 0.81 suggests that the model retrieves relevant information efficiently. It means that when the model predicts survivors (positive class), it is correct about 81% of the time. 
 
+The identical AUC (0.860131) and AIR (0.810724) values for both the training and validation datasets suggest that the model is likely overfitting or through we splitted the dataset into 70% and 30% for training-validation dataset. The Random Forest model may be too complex or have too many trees, which could cause it to capture noise and nuances in the training data, resulting in near-identical performance.
+
+The Random Forest model achieved an AUC (Area Under the Curve) of 0.500 on the test dataset, indicating that the model's performance is equivalent to random guessing. An AUC of 0.5 typically means the model cannot distinguish between the two classes (Survived vs. Not Survived). The Average Information Retrieval (AIR) score is 0.3636, which also indicates relatively low effectiveness in retrieving positive instances (i.e., those who survived)
 
 ## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model ##
 
