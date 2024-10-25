@@ -21,7 +21,7 @@ Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Ide
 
 ## Responsible AI
 This model was built using packages that promote responsible AI practices, such as:
-* **[PiML](https://github.com/yexf308/pyinter)** for interpretable machine learning.
+* **[PiML]()** for interpretable machine learning.
 * **[InterpretML](https://github.com/interpretml/interpret)** for explaining and visualizing model predictions.
 
 **Fairness Considerations:** Biases in the training data, particularly related to gender and class, have been considered. Interpretability tools were used to understand the model’s behavior and its impact on protected groups.
@@ -115,32 +115,40 @@ The following hyperparameters were used for the 'random forest' model:
 ## Quantitative Analysis
 
 ### Metrics Used to Evaluate the Final Model
-The following metrics were used to evaluate the final model:
-- **AUC (Area Under the ROC Curve)**: Measures the model's ability to distinguish between positive and negative classes.
-- **AIR (Adverse Impact Ratio)**: A fairness metric that compares outcomes between groups, such as male vs. female survival rates.
+The following metrics were used to evaluate the final model: 
+* **AUC (Area Under the ROC Curve)**: Measures the model's ability to distinguish between positive and negative classes.
 
 ### Final Values of Metrics for All Data using 'logistic regression' model:
 
-| Dataset     | AUC   | AIR  |
-|-------------|-------|------|
-| Training    | 0.88  | 0.88 |
-| Validation  | 0.86  | 0.83 |
-| Test        | 0.98  | 0.98 |
+| Dataset     | AUC   | 
+|-------------|-------|
+| Training    | 0.88  | 
+| Validation  | 0.86  |
+| Test        |       | 
 
 ### Final Values of Metrics for All Data using 'random forest' model:
 
-| Dataset     | AUC   | AIR  |
-|-------------|-------|------|
-| Training    | 0.86  | 0.81 |
-| Validation  | 0.86  | 0.81 |
-| Test        | 0.50  | 0.36 |
+| Dataset     | AUC   | 
+|-------------|-------|
+| Training    | 0.86  | 
+| Validation  | 0.86  | 
+| Test        |       | 
 
 
 ### Plots Related to Data or Final Model
  
 ![Plot of Survival Rate Vs. Passenger Class](SR_by_Class.png) 
+
+**Description**: 
+
 ![Plot of Survival Rate Vs. Passenger Gender](SR_by_Gender.png) 
+
+**Description**: 
+
 ![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
+
+**Description**: 
+
 
 ## Insights using Logistic Regression Model ##
 The model's AUC of 0.88 and AIR of 0.88 on training data indicate strong performance, showing that it effectively distinguishes between passengers who survived and those who did not, with high precision across thresholds. However, these scores are based on training data, so there’s a potential risk of overfitting. To ensure the model generalizes well, it's crucial to evaluate on validation or test data and make adjustments if performance drops significantly.
