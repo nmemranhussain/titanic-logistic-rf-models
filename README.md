@@ -1,7 +1,6 @@
-# titanic-ml-models
-Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Identify key factors influencing survival.
-
 # Titanic ML Models - Model Card
+
+Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Identify key factors influencing survival.
 
 ## Basic Information
 **Names:** N M Emran Hussain  
@@ -9,8 +8,6 @@ Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Ide
 **Date:** October 2024  
 **Model Version:** 1.0.0  
 **License:** [MIT License](LICENSE)
-
-**Repository:** [https://github.com/nmemranhussain/titanic-ml-models]
 
 ## Model Implementation
 Logistic Regression : http://localhost:8889/notebooks/Titanic_logistic.ipynb?
@@ -28,8 +25,8 @@ Random Forest : http://localhost:8889/notebooks/Titanic_RF.ipynb?
 
 ## Responsible AI
 This model was built using packages that promote responsible AI practices, such as:
-- **[PiML](https://github.com/yexf308/pyinter)** for interpretable machine learning.
-- **[InterpretML](https://github.com/interpretml/interpret)** for explaining and visualizing model predictions.
+* **[PiML](https://github.com/yexf308/pyinter)** for interpretable machine learning.
+* **[InterpretML](https://github.com/interpretml/interpret)** for explaining and visualizing model predictions.
 
 **Fairness Considerations:** Biases in the training data, particularly related to gender and class, have been considered. Interpretability tools were used to understand the model’s behavior and its impact on protected groups.
 
@@ -48,10 +45,6 @@ The dataset was divided into training and validation data as follows:
 The dataset was divided into training and validation data as follows:
 - **Training Data Split:** 70%
 - **Validation Data Split:** 30%
-
-### Number of Rows
-- **Number of rows in Training Data:** 712
-- **Number of rows in Validation Data:** 179
 
 ### Data Dictionary
 
@@ -98,8 +91,8 @@ The following columns were used as inputs (features) in the final model:
 - **Target Column:** Survived
 
 ### Type of Models
-The first model used is a **Logistic Regression** classifier. [Link to Jupyter Notebook](http://localhost:8889/notebooks/Titanic_logistic.ipynb?)
-The second model used is a **Random Forest** classifier [Link to Jupyter Notebook](http://localhost:8890/notebooks/Titanic_RF.ipynb)
+The first model used is a **Logistic Regression** classifier. [Link to Jupyter Notebook](https://github.com/nmemranhussain/titanic-ml-models/blob/main/Titanic_logistic%20(1).ipynb)
+The second model used is a **Random Forest** classifier [Link to Jupyter Notebook](https://github.com/nmemranhussain/titanic-ml-models/blob/main/Titanic_RF.ipynb)
 
 ### Software Used to Implement the Model
 - **Software:** Python (with libraries such as Pandas, Scikit-learn)
