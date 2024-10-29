@@ -16,7 +16,7 @@ Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Ide
 
 ## Model Details
 **Architecture:** This model utilizes linear models such as Logistic Regression, Random Forest, etc., for classification tasks.  
-**Training Data:** Titanic dataset provided by Kaggle (https://www.kaggle.com/c/titanic/data).  
+**Training Data:** Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
 **Evaluation Metrics:** Area Under the Curve (AUC) and Average Information Retrieval (AIR).
 
 ## Responsible AI
