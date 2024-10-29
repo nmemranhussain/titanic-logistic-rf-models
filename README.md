@@ -87,8 +87,8 @@ The following columns were used as inputs (features) in the final model:
 - **Target Column:** Survived
 
 ### Type of Models
-The first model used is a **Logistic Regression** classifier. [Link to Jupyter Notebook](https://github.com/nmemranhussain/titanic-ml-models/blob/main/Titanic_logistic%20(1).ipynb)
-The second model used is a **Random Forest** classifier [Link to Jupyter Notebook](https://github.com/nmemranhussain/titanic-ml-models/blob/main/Titanic_RF.ipynb)
+* **[Logistic Regression Classifier](https://github.com/nmemranhussain/titanic-ml-models/blob/main/Titanic_logistic%20(1).ipynb)**
+* **[Random Forest Classifier](https://github.com/nmemranhussain/titanic-ml-models/blob/main/Titanic_RF.ipynb)**
 
 ### Software Used to Implement the Model
 - **Software:** Python (with libraries such as Pandas, Scikit-learn)
