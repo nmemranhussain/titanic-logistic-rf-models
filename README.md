@@ -139,15 +139,15 @@ The following metrics were used to evaluate the final model:
  
 ![Plot of Survival Rate Vs. Passenger Class](SR_by_Class.png) 
 
-**Description**: 
+**Description**: Passengers in 1st class had the highest survival rate, followed by those in 2nd class. 3rd class passengers had the lowest survival rate.
 
 ![Plot of Survival Rate Vs. Passenger Gender](SR_by_Gender.png) 
 
-**Description**: 
+**Description**: Females had a significantly higher survival rate than males, aligning with the negative coefficient for the "Sex" feature in the logistic regression model.
 
 ![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
 
-**Description**: 
+**Description**: Children (ages 0-12) had the highest survival rate, while seniors (ages 50-80) had the lowest. Young adults and adults had relatively similar survival rates, though slightly lower than children.
 
 
 ## Insights using Logistic Regression Model ##
