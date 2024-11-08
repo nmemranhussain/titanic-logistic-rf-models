@@ -130,9 +130,9 @@ The following metrics were used to evaluate the final model:
 
 | Dataset     | AUC   | 
 |-------------|-------|
-| Training    | 0.86  | 
-| Validation  | 0.86  | 
-| Test        |       | 
+| Training    | 0.97  | 
+| Validation  | 0.81  | 
+| Test        | 0.75  | 
 
 
 ### Plots Related to Data or Final Model
