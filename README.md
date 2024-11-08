@@ -68,7 +68,7 @@ The Titanic test dataset used in this model is sourced from [Kaggle](https://www
 - **Number of rows in Test Data:** 418
 
 ### Differences Between Training and Test Data
-- The test dataset does not include the `Survived` column, which is the target variable in the training dataset.
+- The training data includes the target variable (Survived), allowing us to train and evaluate the model, while the test data lacks this target, so it’s used solely for generating predictions to assess model performance on unseen data.
 - All other feature columns are the same between the training and test datasets.
 
 ## Model Details
