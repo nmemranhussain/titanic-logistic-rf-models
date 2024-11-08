@@ -122,9 +122,9 @@ The following metrics were used to evaluate the final model:
 
 | Dataset     | AUC   | 
 |-------------|-------|
-| Training    | 0.88  | 
-| Validation  | 0.86  |
-| Test        |       | 
+| Training    | 0.78  | 
+| Validation  | 0.80  |
+| Test        | 0.76  | 
 
 ### Final Values of Metrics for All Data using 'random forest' model:
 
@@ -148,29 +148,6 @@ The following metrics were used to evaluate the final model:
 ![Plot of Survival Rate Vs. Passenger Age](SR_by_Age.png) 
 
 **Description**: Children (ages 0-12) had the highest survival rate, while seniors (ages 50-80) had the lowest. Young adults and adults had relatively similar survival rates, though slightly lower than children.
-
-
-## Insights using Logistic Regression Model ##
-The model's AUC of 0.88 and AIR of 0.88 on training data indicate strong performance, showing that it effectively distinguishes between passengers who survived and those who did not, with high precision across thresholds. However, these scores are based on training data, so there’s a potential risk of overfitting. To ensure the model generalizes well, it's crucial to evaluate on validation or test data and make adjustments if performance drops significantly.
-
-The model's AUC of 0.86 and AIR of 0.83 on validation data suggest that it performs well in distinguishing between survivors and non-survivors on unseen data, though slightly lower than the training data. This indicates that the model generalizes reasonably well. The slight drop from training to validation metrics suggests that the model is not significantly overfitting.
-
-The AUC score of 0.98 on test data (here, gender_submission.csv) indicates that the model is highly capable of distinguishing between the classes (survived vs. not survived). The AIR score of 0.98 further demonstrates that the model is not only accurate in terms of ranking predictions but also does well in identifying relevant instances. 
-
-## Insights using Random Forest Model ##
-An AUC score of 0.86 is quite high, indicating that the Random Forest model can effectively discriminate between the positive class (survived) and the negative class (did not survive). An AIR of 0.81 suggests that the model retrieves relevant information efficiently. It means that when the model predicts survivors (positive class), it is correct about 81% of the time. 
-
-The identical AUC (0.860131) and AIR (0.810724) values for both the training and validation datasets suggest that the model is likely overfitting through we splitted the dataset into 70% and 30% for training-validation dataset. The Random Forest model may be too complex or have too many trees, which could cause it to capture noise and nuances in the training data, resulting in near-identical performance.
-
-The Random Forest model achieved an AUC (Area Under the Curve) of 0.500 on the test dataset, indicating that the model's performance is equivalent to random guessing. An AUC of 0.5 typically means the model cannot distinguish between the two classes (Survived vs. Not Survived). The Average Information Retrieval (AIR) score is 0.3636, which also indicates relatively low effectiveness in retrieving positive instances (i.e., those who survived)
-
-## Conclusion ##
-
-Both logistic regression and random forest models were employed to predict passenger survival on the Titanic dataset. Logistic regression exhibited consistent performance across training, validation, and test sets, suggesting good generalization. The model's AUC and AIR scores consistently hovered around 0.88, indicating reliable prediction capabilities.
-
-In contrast, random forest demonstrated signs of overfitting. While it achieved high scores on the training set, its performance dropped significantly on the test set, indicating an inability to generalize well to unseen data. This might be attributed to the model's complexity or the presence of noise in the training data.
-
-In conclusion, based on the findings, logistic regression appears to be a more suitable choice for this particular problem due to its better generalization and consistent performance. However, further analysis and experimentation might be necessary to fully understand the reasons for random forest's overfitting and explore potential mitigation strategies.
 
 ## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model ##
 
