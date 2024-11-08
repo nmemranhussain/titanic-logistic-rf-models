@@ -106,7 +106,7 @@ The following hyperparameters were used for the 'logistic regression' model:
 - Software used: scikit-learn sklearn.linear_model._logistic
 
 The following hyperparameters were used for the 'random forest' model:
-- Columns used as inputs': ['Pclass', 'Sex', 'Age', 'Fare'], 
+- Columns used as inputs': ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked'], 
 - Target column: 'Survived',
 - Type of model: 'Random Forest Classifier',
 - Software used: 'scikit-learn',
