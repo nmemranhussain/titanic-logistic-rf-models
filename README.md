@@ -39,8 +39,8 @@ The dataset was divided into training and validation data as follows:
 
 ### Splitting the Data for random forest model
 The dataset was divided into training and validation data as follows:
-- **Training Data Split:** 70%
-- **Validation Data Split:** 30%
+- **Training Data Split:** 80%
+- **Validation Data Split:** 20%
 
 ### Data Dictionary
 
