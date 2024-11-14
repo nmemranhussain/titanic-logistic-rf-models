@@ -14,11 +14,6 @@ Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Ide
 **Intended Users:** Data scientists, machine learning enthusiasts, educators.  
 **Out-of-scope Uses:** The model is not intended for production use in any critical applications or real-time decision-making systems.
 
-## Model Details
-**Architecture:** This model utilizes linear models such as Logistic Regression, Random Forest, etc., for classification tasks.  
-**Training Data:** Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
-**Evaluation Metrics:** Area Under the Curve (AUC).
-
 ## Responsible AI
 This model was built using packages that promote responsible AI practices, such as:
 * **[PiML]()** for interpretable machine learning.
@@ -72,6 +67,9 @@ The Titanic test dataset used in this model is sourced from [Kaggle](https://www
 - All other feature columns are the same between the training and test datasets.
 
 ## Model Details
+**Architecture:** This model utilizes linear models such as Logistic Regression, Random Forest, etc., for classification tasks.  
+**Training Data:** Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
+**Evaluation Metrics:** Area Under the Curve (AUC).
 
 ### Columns Used as Inputs in the Final Model
 The following columns were used as inputs (features) in the final model:
