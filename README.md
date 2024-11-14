@@ -61,7 +61,7 @@ The dataset was divided into training and validation data as follows:
 
 ## Model Details
 ### Architecture  
-- This model card utilizes linear model such as 'Logistic Regression'. As an alternative model 'Random Forest' is used.  
+- This model card utilizes linear model such as **Logistic Regression**. As an alternative model **Random Forest** is used.  
 
 ### Training Data  
 - Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
