@@ -90,7 +90,12 @@ The following columns were used as inputs (features) in the final model:
 
 ### Software Used to Implement the Model
 - **Software:** Python (with libraries such as Pandas, Scikit-learn)
-- **Version of the Modeling Software:** scikit-learn 1.x
+
+### Version of the Modeling Software: 
+- **'pandas'**: '2.2.2',
+- **'scikit-learn'**: '1.4.2',
+- **'seaborn'**: '0.13.2',
+- **'matplotlib'**: '3.8.4**
 
 ### Hyperparameters or Other Settings of the Model
 The following hyperparameters were used for the 'logistic regression' model:
@@ -108,7 +113,6 @@ The following hyperparameters were used for the 'random forest' model:
 - Target column: 'Survived',
 - Type of model: 'Random Forest Classifier',
 - Software used: 'scikit-learn',
-- Software version: '0.24.1'
 
 ## Quantitative Analysis
 
