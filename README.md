@@ -50,7 +50,7 @@ The dataset was divided into training and validation data as follows:
 ## Test Data
 
 ### Source of Test Data
-The Titanic test dataset used in this model is sourced from [Kaggle](https://www.kaggle.com/c/titanic/data?select=gender_submission.csv).
+- The Titanic test dataset used in this model is sourced from [Kaggle](https://www.kaggle.com/c/titanic/data?select=gender_submission.csv).
 
 ### Number of Rows in Test Data
 - **Number of rows in Test Data:** 418
@@ -61,13 +61,13 @@ The Titanic test dataset used in this model is sourced from [Kaggle](https://www
 
 ## Model Details
 ### Architecture  
-This model card utilizes linear model such as 'Logistic Regression'. As an alternative model 'Random Forest' is used.  
+- This model card utilizes linear model such as 'Logistic Regression'. As an alternative model 'Random Forest' is used.  
 
 ### Training Data  
-Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
+- Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
 
 ### Evaluation Metrics  
-Area Under the Curve (AUC).
+- Area Under the Curve (AUC).
 
 ### Columns Used as Inputs in the Final Model
 The following columns were used as inputs (features) in the final model:
