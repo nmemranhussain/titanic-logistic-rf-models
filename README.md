@@ -11,7 +11,7 @@ Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Ide
 
 ## Intended Use
 **Purpose:** The model predicts survival on the Titanic dataset using various machine learning algorithms.  
-**Intended Users:** Data scientists, machine learning enthusiasts, educators.  
+**Intended Users:** Data Analysts, Data scientists, machine learning enthusiasts, educators.  
 **Out-of-scope Uses:** The model is not intended for production use in any critical applications or real-time decision-making systems.
 
 ## Responsible AI
