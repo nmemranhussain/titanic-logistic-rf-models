@@ -126,15 +126,6 @@ The following metrics were used to evaluate the final model:
 | Validation  | 0.80  |
 | Test        | 0.76  | 
 
-### Final Values of Metrics for All Data using 'random forest' as an alternative model:
-
-| Dataset     | AUC   | 
-|-------------|-------|
-| Training    | 0.97  | 
-| Validation  | 0.81  | 
-| Test        | 0.75  | 
-
-
 ### Plots Related to Data or Final Model
  
 ![Plot of Survival Rate Vs. Passenger Class](SR_by_Class.png) 
