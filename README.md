@@ -60,7 +60,7 @@ The Titanic test dataset used in this model is sourced from [Kaggle](https://www
 - All other feature columns are the same between the training and test datasets.
 
 ## Model Details
-**Architecture:** This model card utilizes linear model such as Logistic Regression. As a alternative model random forest is used.  
+**Architecture:** This model card utilizes linear model such as 'Logistic Regression'. As a alternative model 'Random Forest' is used.  
 **Training Data:** Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
 **Evaluation Metrics:** Area Under the Curve (AUC).
 
@@ -95,17 +95,17 @@ The following hyperparameters were used for the 'logistic regression' model:
 - **Solver:** lbfgs
 - **Maximum Iterations:** 100
 - **Regularization (C):** 1.0
-- Features used in the model: ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex_male', 'Embarked_Q', 'Embarked_S']
-- Target column: Survived
-- Model type: Logistic Regression
-- Hyperparameters: Solver = lbfgs, Max iterations = 500, C = 1.0
-- Software used: scikit-learn sklearn.linear_model._logistic
+- **Features used in the model**: ['Pclass', 'Age', 'SibSp', 'Parch', 'Fare', 'Sex_male', 'Embarked_Q', 'Embarked_S']
+- **Target column**: Survived
+- **Model type**: Logistic Regression
+- **Hyperparameters**: Solver = lbfgs, Max iterations = 500, C = 1.0
+- **Software used**: scikit-learn sklearn.linear_model._logistic
 
 The following hyperparameters were used for the 'random forest' as an alternative model:
-- Columns used as inputs': ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked'], 
-- Target column: 'Survived',
-- Type of model: 'Random Forest Classifier',
-- Software used: 'scikit-learn',
+- **Columns used as inputs**: ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked'], 
+- **Target column**: 'Survived',
+- **Type of model**: 'Random Forest Classifier',
+- **Software used**: 'scikit-learn',
 
 ## Quantitative Analysis
 
