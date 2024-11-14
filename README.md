@@ -89,7 +89,7 @@ The following columns were used as inputs (features) in the final model:
 * **[Random Forest Classifier](https://github.com/nmemranhussain/titanic-ml-models/blob/main/Titanic_RF.ipynb)**
 
 ### Software Used to Implement the Model
-- **Software:** Python (with libraries such as Pandas, Scikit-learn)
+- **Software:** Python (with libraries such as Pandas, Scikit-learn, seaborn & matplotlib)
 
 ### Version of the Modeling Software: 
 - **'pandas'**: '2.2.2',
