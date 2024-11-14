@@ -30,17 +30,12 @@ The dataset was divided into training and validation data as follows:
 - **Training Data Split:** 80%
 - **Validation Data Split:** 20%
 
-### Splitting the Data for random forest model
-The dataset was divided into training and validation data as follows:
-- **Training Data Split:** 80%
-- **Validation Data Split:** 20%
-
 ### Data Dictionary
 
 | Column Name     | Modeling Role  | Measurement Level | Description                            |
 |-----------------|----------------|-------------------|----------------------------------------|
 | PassengerId     | Identifier     | Nominal           | Unique ID for each passenger           |
-| Survived        | Target          | Binary            | 1 if the passenger survived, 0 otherwise|
+| Survived        | Target         | Binary            | 1 if the passenger survived, 0 otherwise|
 | Pclass          | Feature        | Ordinal           | Passenger class (1st, 2nd, 3rd)        |
 | Name            | Feature        | Nominal           | Name of the passenger                  |
 | Sex             | Feature        | Nominal           | Gender of the passenger (Male/Female)  |
@@ -65,7 +60,7 @@ The Titanic test dataset used in this model is sourced from [Kaggle](https://www
 - All other feature columns are the same between the training and test datasets.
 
 ## Model Details
-**Architecture:** This model utilizes linear models such as Logistic Regression, Random Forest, etc., for classification tasks.  
+**Architecture:** This model card utilizes linear model such as Logistic Regression. As a alternative model random forest is used.
 **Training Data:** Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
 **Evaluation Metrics:** Area Under the Curve (AUC).
 
@@ -106,7 +101,7 @@ The following hyperparameters were used for the 'logistic regression' model:
 - Hyperparameters: Solver = lbfgs, Max iterations = 500, C = 1.0
 - Software used: scikit-learn sklearn.linear_model._logistic
 
-The following hyperparameters were used for the 'random forest' model:
+The following hyperparameters were used for the 'random forest' as an alternative model:
 - Columns used as inputs': ['Pclass', 'Sex', 'Age', 'SibSp', 'Parch', 'Fare', 'Embarked'], 
 - Target column: 'Survived',
 - Type of model: 'Random Forest Classifier',
@@ -126,7 +121,7 @@ The following metrics were used to evaluate the final model:
 | Validation  | 0.80  |
 | Test        | 0.76  | 
 
-### Final Values of Metrics for All Data using 'random forest' model:
+### Final Values of Metrics for All Data using 'random forest' as an alternative model:
 
 | Dataset     | AUC   | 
 |-------------|-------|
