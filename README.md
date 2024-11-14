@@ -19,8 +19,6 @@ This model was built using packages that promote responsible AI practices, such 
 * **[PiML]()** for interpretable machine learning.
 * **[InterpretML](https://github.com/interpretml/interpret)** for explaining and visualizing model predictions.
 
-**Fairness Considerations:** Biases in the training data, particularly related to gender and class, have been considered. Interpretability tools were used to understand the model’s behavior and its impact on protected groups.
-
 ## Training Data
 **Dataset Name:** Titanic Training Data  
 **Number of Samples:** 891  
@@ -152,10 +150,9 @@ The following metrics were used to evaluate the final model:
 **Description**: Children (ages 0-12) had the highest survival rate, while seniors (ages 50-80) had the lowest. Young adults and adults had relatively similar survival rates, though slightly lower than children.
 
 ## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model ##
+Logistic regression, while a powerful tool, presents several limitations. Its assumption of linear relationships can overlook intricate patterns within data. This can lead to overemphasis on certain features, biasing predictions and potentially reinforcing societal biases, especially when dealing with sensitive attributes like gender or class. The probabilistic nature of its output can be misinterpreted as deterministic, leading to misinformed decisions. Additionally, model performance is highly contingent on the selection of relevant features, and its results may not generalize well to diverse or evolving datasets. Moreover, the model's reliance on specific features, such as gender, can limit its applicability to different contexts. To mitigate potential biases, the training data was carefully examined for disparities related to gender and class. Interpretability tools were employed to analyze the model's decision-making process and its impact on protected groups.
 
-Logistic Regression assumes linear relationships, potentially missing complex patterns. It can overemphasize certain features, leading to biased predictions. It may reinforce social biases, especially with sensitive features like gender or class. Probabilistic results may be misunderstood as deterministic. In logistic regression, model performance is highly dependent on the right feature choices. The results may not generalize well to modern contexts or datasets. Logistic regression may produce unexpected reliance on certain features (e.g., gender), limiting its applicability to other datasets.
-
-On the other hand, in 'Random Forest' it is harder to interpret compared to logistic regression, making explainability a challenge. Despite being more robust, it may still overfit without careful tuning. If trained on biased data, it can perpetuate unfairness in predictions. It requires more computational power and can slow down real-time predictions. It can obscure which features are truly influential due to the complexity of multiple trees. Random Forest model's performance may vary based on data and hyperparameter tuning. It may capture unexpected patterns and interactions between features, which can lead to either surprisingly good or poor results depending on the dataset.
+On the other hand, While random forest offers increased robustness and accuracy compared to logistic regression, it comes with its own set of challenges. Its complex structure makes it difficult to interpret, hindering explainability. Despite its resilience, it can still be susceptible to overfitting if not carefully tuned. Furthermore, if trained on biased data, it can perpetuate unfairness in predictions. Additionally, it demands significant computational resources, which can slow down real-time applications. The model's reliance on multiple decision trees can obscure the true influence of individual features. The performance of a random forest model is sensitive to both data quality and hyperparameter tuning, and it may uncover unexpected patterns or interactions that can lead to either surprisingly good or poor results. To ensure fairness, the training data was scrutinized for biases related to gender and class. Interpretability tools were utilized to understand the model's behavior and its potential impact on protected groups.
 
 
 
