@@ -61,6 +61,7 @@ The Titanic test dataset used in this model is sourced from [Kaggle](https://www
 
 ## Model Details
 **Architecture:** This model card utilizes linear model such as Logistic Regression. As a alternative model random forest is used.
+
 **Training Data:** Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
 **Evaluation Metrics:** Area Under the Curve (AUC).
 
