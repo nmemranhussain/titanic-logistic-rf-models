@@ -63,11 +63,16 @@ The dataset was divided into training and validation data as follows:
 ### Architecture  
 - This model card utilizes linear model such as **Logistic Regression**. As an alternative model **Random Forest** is used.  
 
-### Training Data  
-- Titanic dataset provided by [Kaggle](https://www.kaggle.com/c/titanic/data).  
-
 ### Evaluation Metrics  
-- Area Under the Curve (AUC).
+- AUC (Area Under the ROC Curve): Measures the model's ability to distinguish between positive and negative classes.
+
+### Final Values of Metrics for All Data using 'logistic regression' model:
+
+| Dataset     | AUC   | 
+|-------------|-------|
+| Training    | 0.78  | 
+| Validation  | 0.80  |
+| Test        | 0.76  | 
 
 ### Columns Used as Inputs in the Final Model
 The following columns were used as inputs (features) in the final model:
@@ -113,18 +118,6 @@ The following hyperparameters were used for the 'random forest' as an alternativ
 - **Software used**: 'scikit-learn',
 
 ## Quantitative Analysis
-
-### Metrics Used to Evaluate the Final Model
-The following metrics were used to evaluate the final model: 
-* **AUC (Area Under the ROC Curve)**: Measures the model's ability to distinguish between positive and negative classes.
-
-### Final Values of Metrics for All Data using 'logistic regression' model:
-
-| Dataset     | AUC   | 
-|-------------|-------|
-| Training    | 0.78  | 
-| Validation  | 0.80  |
-| Test        | 0.76  | 
 
 ### Plots Related to Data or Final Model
  
