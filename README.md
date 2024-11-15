@@ -14,11 +14,6 @@ Analyze Titanic passenger data with Logistic Regression &amp; Random Forest. Ide
 **Intended Users:** Data Analysts, Data scientists, machine learning enthusiasts, educators.  
 **Out-of-scope Uses:** The model is not intended for production use in any critical applications or real-time decision-making systems.
 
-## Responsible AI
-This model was built using packages that promote responsible AI practices, such as:
-* **[PiML]()** for interpretable machine learning.
-* **[InterpretML](https://github.com/interpretml/interpret)** for explaining and visualizing model predictions.
-
 ## Training Data
 **Dataset Name:** Titanic Training Data  
 **Number of Samples:** 891  
@@ -135,6 +130,11 @@ The following hyperparameters were used for the 'random forest' as an alternativ
 
 ## Potential Impacts, Risks, and Uncertainties using Logistic Regression & Random Forest Model ##
 Logistic regression, while a powerful tool, presents several limitations. Its assumption of linear relationships can overlook intricate patterns within data. This can lead to overemphasis on certain features, biasing predictions and potentially reinforcing societal biases, especially when dealing with sensitive attributes like gender or class. The probabilistic nature of its output can be misinterpreted as deterministic, leading to misinformed decisions. Additionally, model performance is highly contingent on the selection of relevant features, and its results may not generalize well to diverse or evolving datasets. Moreover, the model's reliance on specific features, such as gender, can limit its applicability to different contexts. To mitigate potential biases, the training data was carefully examined for disparities related to gender and class. Interpretability tools were employed to analyze the model's decision-making process and its impact on protected groups.
+
+## Responsible AI
+This model was built using packages that promote responsible AI practices, such as:
+* **[PiML]()** for interpretable machine learning.
+* **[InterpretML](https://github.com/interpretml/interpret)** for explaining and visualizing model predictions.
 
 On the other hand, While random forest comes with its own set of challenges. Its complex structure makes it difficult to interpret, hindering explainability. Despite its resilience, it can still be susceptible to overfitting if not carefully tuned. Furthermore, if trained on biased data, it can perpetuate unfairness in predictions. Additionally, it demands significant computational resources, which can slow down real-time applications. The model's reliance on multiple decision trees can obscure the true influence of individual features. The performance of a random forest model is sensitive to both data quality and hyperparameter tuning, and it may uncover unexpected patterns or interactions that can lead to either surprisingly good or poor results. To ensure fairness, the training data was scrutinized for biases related to gender and class. Interpretability tools were utilized to understand the model's behavior and its potential impact on protected groups.
 
